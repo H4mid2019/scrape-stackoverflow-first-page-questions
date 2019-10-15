@@ -22,5 +22,17 @@ for question in questions:
 quest_dict_sorted = sorted(
     quest_dict.items(), key=lambda kv: kv[1], reverse=True)
 
+
+# uncoment this lines for searching 'python' word in the first page
+# target_word = 'python'
+# for key, value in quest_dict_sorted:
+#     if target_word in str(key):
+#         print(key, "\t", value)
+#     elif target_word.upper() in str(key):
+#         print(key, "\t", value)
+#     elif target_word.capitalize() in str(key):
+#         print(key, "\t", value)
+
+
 for key, value in quest_dict_sorted:
     print(key, "\t", value)
